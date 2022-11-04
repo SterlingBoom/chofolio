@@ -10,7 +10,7 @@
     "unique_id": { "string": {} },
     "username": { "string": {} },
     "workXP": {
-      "hasMany": "Work"
+      "Work": {}
     }
   },
 
