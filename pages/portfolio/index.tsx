@@ -112,7 +112,7 @@ const PROFILE: NextPage = () => {
         unique_id: username + unique,
         workXP,
       };
-      const response = await Axios.post("/api/user", { newPortfolio })
+      await Axios.post("/api/user", { newPortfolio })
         .then((res) => {
           console.log(res.data);
           Swal.fire({
