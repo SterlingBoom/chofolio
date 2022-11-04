@@ -10,14 +10,7 @@ import Swal from "sweetalert2";
 import styles from "../../styles/CreatePortfolio.module.css";
 
 const PROFILE: NextPage = () => {
-  const [editorLoaded, setEditorLoaded] = useState(false);
   const [data, setData] = useState("");
-  useEffect(() => {
-    setEditorLoaded(true);
-    if (editorLoaded) {
-      console.log("loaded");
-    }
-  }, []);
 
   console.log(data);
   let random = "";

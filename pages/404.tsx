@@ -7,7 +7,7 @@ const Error404 = () => {
     setTimeout(() => {
       router.push("/");
     }, 3000);
-  }, []);
+  }, [router]);
 
   return (
     <div>
