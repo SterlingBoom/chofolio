@@ -11,9 +11,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     res.json({ message: "Hello, World!" });
   }
   if (req.method == "POST") {
-    const newPortfolio = req.body.newPortfolio;
-    let portfolio = await db.collection("chofolio").insertOne(newPortfolio);
-    res.json(portfolio);
+    // const newPortfolio = req.body.newPortfolio;
+    // let portfolio = await db.collection("chofolio").insertOne(newPortfolio);
+    // res.json(portfolio);
+    res.json({ message: "Hello, World!" });
   }
 };
 
