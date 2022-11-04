@@ -1,37 +1,30 @@
 {
   "Portfolio": {
-    "name": "string",
-    "role": "string",
-    "about": "string",
+    "name": { "string": {} },
+    "role": { "string": {} },
+    "about": { "string": {} },
     "skills": {
       "hasMany": "Skills"
     },
-    "github_username": "string",
-    "unique_id": "string",
-    "username": "string",
+    "github_username": { "string": {} },
+    "unique_id": { "string": {} },
+    "username": { "string": {} },
     "workXP": {
       "hasMany": "Work"
     }
   },
 
   "Work": {
-    "title": "string",
-    "company": "string",
-    "description": "string",
-    "start": "string",
-    "end": "string"
+    "title": { "string": {} },
+    "company": { "string": {} },
+    "description": { "string": {} },
+    "start": { "string": {} },
+    "end": { "string": {} }
   },
   "Skills": {
-    "language": "string",
+    "language": { "string": {} },
     "level": {
-      "hasMany": "Level"
+      "string": {}
     }
-  },
-  "Level": {
-    "beginner": "Begineer",
-    "junior": "Junior",
-    "intermediate": "Intermediate",
-    "senior": "Senior",
-    "expert": "Expert"
   }
 }
