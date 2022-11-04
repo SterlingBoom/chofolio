@@ -6,8 +6,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const db = client.db("chofolio");
 
   if (req.method == "GET") {
-    const allPortfolios = await db.collection("chofolio").find({}).toArray();
-    res.json(allPortfolios);
+    // const allPortfolios = await db.collection("chofolio").find({}).toArray();
+    // res.json(allPortfolios);
+    res.json({ message: "Hello, World!" });
   }
   if (req.method == "POST") {
     const newPortfolio = req.body.newPortfolio;
