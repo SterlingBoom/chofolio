@@ -13,6 +13,6 @@ export default async function handler(
   const db = client.db("chofolio");
 
   const allPortfolios = await db.collection("chofolio").find({}).toArray();
-  res.status(200).json(allPortfolios);
-  // res.status(200).json({ name: "API RUNNING" });
+  // res.status(200).json(allPortfolios);
+  res.status(200).json({ name: "API RUNNING" });
 }

@@ -12,10 +12,9 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "27.1.0",
-    "@ckeditor/ckeditor5-react": "3.0.2",
     "axios": "^1.1.3",
-    "html-react-parser": "^3.0.4",
+    "dashify": "^2.0.0",
+    "firebase-admin": "^11.2.0",
     "mongoose": "^6.7.1",
     "next": "13.0.1",
     "react": "18.2.0",
