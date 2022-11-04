@@ -9,13 +9,11 @@
     "github_username": { "string": {} },
     "unique_id": { "string": {} },
     "username": { "string": {} },
-    "workXP": {
-      "title": { "string": {} },
-      "company": { "string": {} },
-      "description": { "string": {} },
-      "start": { "string": {} },
-      "end": { "string": {} }
-    }
+    "workTitle": { "string": {} },
+    "workCompany": { "string": {} },
+    "workDescription": { "string": {} },
+    "workStart": { "string": {} },
+    "workEnd": { "string": {} }
   },
 
   "Skills": {
