@@ -46,7 +46,7 @@ const NewProfile = ({ data }: any) => {
     <div className={styles.portfolio}>
       <div className={styles.portfolioContainer}>
         <div className={styles.basic}>
-          <Image src={avatar} alt="Profile" width={100} height={100} />
+          <img src={avatar} alt="Profile" />
 
           <div className={styles.extra}>
             <div className={styles.name}>{user?.name}</div>
