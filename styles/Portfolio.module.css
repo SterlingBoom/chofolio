@@ -17,7 +17,7 @@
 }
 .basic img {
   width: 100px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 .extra {
   width: 70%;

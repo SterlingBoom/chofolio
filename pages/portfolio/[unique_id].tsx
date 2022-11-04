@@ -1,12 +1,13 @@
 import axios from "axios";
 import { GetServerSideProps } from "next";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Portfolio.module.css";
 import { Portfolio, Repo } from "../../types";
 import { RiGitRepositoryLine } from "react-icons/ri";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import Image from "next/image";
 
-const newProfile = ({ data }: any) => {
+const NewProfile = ({ data }: any) => {
   const [avatar, setavatar] = useState<string>("");
   const [user, setuser] = useState<Portfolio>();
   const [repos, setrepos] = useState<any>();
@@ -39,13 +40,13 @@ const newProfile = ({ data }: any) => {
     };
     getGithubData();
     getGithubRepoData();
-  }, []);
+  }, [data]);
 
   return (
     <div className={styles.portfolio}>
       <div className={styles.portfolioContainer}>
         <div className={styles.basic}>
-          <img src={avatar} alt={user?.username} />
+          <Image src={avatar} alt="Profile" width={100} height={100} />
 
           <div className={styles.extra}>
             <div className={styles.name}>{user?.name}</div>
@@ -59,9 +60,9 @@ const newProfile = ({ data }: any) => {
 
         <div className={styles.header}>Tech Stack</div>
         <div className={styles.techStackContainer}>
-          {user?.skills.map((val) => {
+          {user?.skills.map((val, key: number) => {
             return (
-              <div className={styles.tech}>
+              <div className={styles.tech} key={key}>
                 <div className={styles.techName}>{val.language}</div>
                 <div className={styles.techLevel}>{val.level}</div>
               </div>
@@ -72,9 +73,9 @@ const newProfile = ({ data }: any) => {
         <div className={styles.header}>WORK Experience</div>
 
         <div className={styles.workContainer}>
-          {user?.workXP?.map((val) => {
+          {user?.workXP?.map((val, key: number) => {
             return (
-              <div className={styles.work}>
+              <div className={styles.work} key={key}>
                 <div className={styles.title}>{val.title}</div>
                 <div className={styles.company}>{val.company}</div>
                 <div className={styles.date}>
@@ -102,9 +103,9 @@ const newProfile = ({ data }: any) => {
         </div>
 
         <div className={styles.repoContainer}>
-          {repos?.slice(0, 6).map((val: Repo) => {
+          {repos?.slice(0, 6).map((val: Repo, key: number) => {
             return (
-              <div className={styles.repo}>
+              <div className={styles.repo} key={key}>
                 <div className={styles.repoName}>
                   <RiGitRepositoryLine />
                   <a href={val.html_url}>{val.name}</a>
@@ -131,7 +132,7 @@ const newProfile = ({ data }: any) => {
   );
 };
 
-export default newProfile;
+export default NewProfile;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { params } = context;
