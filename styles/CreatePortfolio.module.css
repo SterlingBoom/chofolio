@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+.heading {
+  font-size: 2em;
+  font-family: "Righteous", cursive;
+  margin: 0 0 2em 0;
+  color: rgb(109, 109, 247);
+}
+.container hr {
+  width: 100%;
+  margin-top: 70px;
+}
+.basicInfo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
+.basicInfo label {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95em;
+  font-family: sans-serif;
+  margin: 1em 0.3em 0.5em 0.3em;
+}
+.header {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.subtext {
+  width: 100%;
+  font-size: 0.95em;
+  color: rgb(188, 188, 238);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.major {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid rgb(44, 44, 44);
+  background: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+.container input:focus {
+  border: 1px solid rgb(109, 109, 247);
+}
+
+.about {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid rgb(44, 44, 44);
+  background: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 100px;
+  margin: 1em 0;
+}
+.work {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 120px;
+}
+.workInput {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid rgb(44, 44, 44);
+  background: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+.dateContainer {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.dateContainer div {
+  width: 200px;
+}
+.date {
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid rgb(44, 44, 44);
+  background: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.button {
+  padding: 0.25em 2em;
+  background: rgb(109, 109, 247);
+  color: white;
+  font-weight: 700;
+  border: 1px solid rgb(109, 109, 247);
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1.05em;
+}
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 120px;
+}
+.radio {
+  display: none;
+}
+.radio:checked + label {
+  background: aqua;
+  box-shadow: none;
+  color: blue;
+  transition: all 0.5s;
+}
+.radioLabel {
+  font-weight: 600;
+  margin: 0.5em 1em;
+  background: rgb(44, 44, 44);
+  color: rgb(109, 109, 247);
+  padding: 0.5em 0em;
+  width: 120px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: rgba(60, 60, 60, 0.2) 0px 8px 8px;
+}
+
+.dateLabel {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95em;
+  font-family: sans-serif;
+  margin: 1em 0.3em 0em 0.3em;
+}
+.createContainer {
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.createContainer button {
+  background: #4bb543;
+  border: 5px solid #4bb543;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 0.5em 3em;
+  cursor: pointer;
+}
+.createContainer button:hover {
+  animation: submitAnimate 1s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes submitAnimate {
+  0% {
+    background-color: aqua;
+    border-color: aqua;
+  }
+  20% {
+    background-color: rgb(0, 102, 255);
+    border-color: rgb(0, 102, 255);
+  }
+  40% {
+    background-color: rgb(255, 0, 242);
+    border-color: rgb(255, 0, 242);
+  }
+  60% {
+    background-color: rgb(255, 0, 85);
+    border-color: rgb(255, 0, 85);
+  }
+  80% {
+    background-color: rgb(238, 255, 0);
+    border-color: rgb(238, 255, 0);
+  }
+  100% {
+    background-color: rgb(255, 136, 0);
+    border-color: rgb(255, 136, 0);
+  }
+}

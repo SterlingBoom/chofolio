@@ -1,0 +1,218 @@
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7%;
+}
+.portfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.basic {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+.basic img {
+  width: 100px;
+  border-radius: 50px;
+}
+.extra {
+  width: 70%;
+}
+.name {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 0.1em 0;
+}
+.username {
+  font-size: 0.9em;
+  margin: 0.1em 0;
+  color: grey;
+}
+.role {
+  margin: 0.2em 0;
+  color: #4595d0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.header {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.about {
+  color: grey;
+  font-weight: 600;
+}
+.techStackContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.tech {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #4595d0;
+  border-radius: 5px;
+  padding: 1.5em 1em;
+}
+.techName {
+  color: #4595d0;
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 100%;
+}
+.techLevel {
+  color: grey;
+  font-size: 0.9em;
+  width: 100%;
+}
+.workContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.work {
+  width: 100%;
+  border-bottom: 1px solid rgb(66, 66, 66);
+  padding: 2em 0.5em;
+}
+.title {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.company {
+  font-size: 0.9em;
+  color: #4595d0;
+  font-weight: 600;
+}
+.date {
+  font-size: 0.8em;
+  color: rgb(167, 164, 164);
+}
+.handleDesc {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #4595d0;
+}
+.description {
+  font-size: 1em;
+  color: grey;
+  font-weight: 500;
+}
+.repoContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.repoHeader {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.repoHeader svg {
+  color: #4595d0;
+  font-weight: 800;
+}
+.repo {
+  width: 300px;
+  margin: 1em;
+  border-right: 1px solid rgb(66, 66, 66);
+  border-bottom: 1px solid rgb(66, 66, 66);
+  padding: 1em 0;
+}
+.repoName {
+  display: flex;
+  align-items: center;
+}
+.repoName svg {
+  font-size: 25px;
+}
+.repoName a {
+  font-weight: 600;
+  color: #4595d0;
+  margin-left: 0.5em;
+}
+.repoName a:hover {
+  text-decoration: underline;
+}
+.repo .repoDescription {
+  font-size: 0.95em;
+  margin: 1em 0;
+  color: rgb(158, 157, 157);
+}
+
+.language div {
+  background: rgb(86, 61, 124);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 0.5em;
+}
+.language {
+  display: flex;
+  align-items: center;
+
+  font-size: 0.8em;
+}
+.footer {
+  width: 100%;
+  margin-top: 3em;
+  text-align: center;
+  color: rgb(167, 164, 164);
+  font-size: 0.9em;
+}
+.cermuel {
+  position: fixed;
+  top: 10;
+  right: 10%;
+  background: transparent;
+  border: 1px solid rgb(86, 61, 124);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.cermuel:hover {
+  animation: submitAnimate 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes submitAnimate {
+  0% {
+    background-color: aqua;
+    border-color: aqua;
+  }
+  20% {
+    background-color: rgb(0, 102, 255);
+    border-color: rgb(0, 102, 255);
+  }
+  40% {
+    background-color: rgb(255, 0, 242);
+    border-color: rgb(255, 0, 242);
+  }
+  60% {
+    background-color: rgb(255, 0, 85);
+    border-color: rgb(255, 0, 85);
+  }
+  80% {
+    background-color: rgb(238, 255, 0);
+    border-color: rgb(238, 255, 0);
+  }
+  100% {
+    background-color: rgb(255, 136, 0);
+    border-color: rgb(255, 136, 0);
+  }
+}
