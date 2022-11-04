@@ -10,17 +10,14 @@
     "unique_id": { "string": {} },
     "username": { "string": {} },
     "workXP": {
-      "Work": {}
+      "title": { "string": {} },
+      "company": { "string": {} },
+      "description": { "string": {} },
+      "start": { "string": {} },
+      "end": { "string": {} }
     }
   },
 
-  "Work": {
-    "title": { "string": {} },
-    "company": { "string": {} },
-    "description": { "string": {} },
-    "start": { "string": {} },
-    "end": { "string": {} }
-  },
   "Skills": {
     "language": { "string": {} },
     "level": {
