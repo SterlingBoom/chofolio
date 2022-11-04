@@ -24,10 +24,8 @@
     "end": { "string": {} }
   },
 
-  "Skills": {
+  "Skill": {
     "language": { "string": {} },
-    "level": {
-      "string": {}
-    }
+    "level": { "string": {} }
   }
 }
