@@ -49,14 +49,23 @@ const Home: NextPage = () => {
         <div className={styles.steps}>
           <div className={styles.step}>
             <Image src="/step1.png" width={350} height={270} alt="Step 1" />
+            <div className={styles.number}>
+              <p>1</p>
+            </div>
             <div className={styles.stepText}>Fill in your portfolio data</div>
           </div>{" "}
           <div className={styles.step}>
-            <Image src="/step2.png" width={350} height={270} alt="Step 1" />
+            <Image src="/step2.png" width={350} height={270} alt="Step 2" />
+            <div className={styles.number}>
+              <p>2</p>
+            </div>
             <div className={styles.stepText}>View your portfolio</div>
           </div>{" "}
           <div className={styles.step}>
-            <Image src="/step3.png" width={350} height={270} alt="Step 1" />
+            <Image src="/step3.png" width={350} height={270} alt="Step 3" />
+            <div className={styles.number}>
+              <p>3</p>
+            </div>
             <div className={styles.stepText}>Share your portfolio link</div>
           </div>
         </div>
