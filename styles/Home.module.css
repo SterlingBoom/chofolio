@@ -1,0 +1,154 @@
+.somecolors {
+  color: #4595d0;
+  color: rgb(64, 64, 247);
+  color: rgb(139, 83, 224);
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.navbar h1 {
+  font-size: 1.2em;
+  color: rgb(64, 64, 247);
+}
+.navbar button {
+  cursor: pointer;
+  background: #4595d0;
+  font-weight: 700;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+}
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.left {
+  width: 500px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header {
+  width: 100%;
+  font-size: 2.3em;
+  font-weight: 500;
+}
+.header2 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.header span {
+  color: rgb(64, 64, 247);
+}
+.text {
+  font-size: 1em;
+  color: rgb(129, 122, 136);
+  font-weight: 500;
+  line-height: 1.7em;
+  margin: 6% 0;
+}
+.portfolio {
+  width: 75%;
+  text-align: center;
+  background: #4595d0;
+  border-radius: 20px;
+  border: 2px solid #4595d0;
+  padding: 1em 0;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+.right {
+  width: 500px;
+}
+.right img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+.stepText {
+  width: 100%;
+  color: rgb(139, 83, 224);
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+.section2 button {
+  width: 75%;
+  text-align: center;
+  background: #4595d0;
+  border-radius: 20px;
+  border: 2px solid #4595d0;
+  padding: 1em 0;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  margin: 5em 0;
+}
+.footer {
+  margin-top: 2em;
+  width: 100%;
+  text-align: center;
+  color: rgb(167, 164, 164);
+  font-size: 1em;
+  border-top: 1px solid rgb(44, 44, 44);
+  padding-top: 1em;
+}
+.footer a {
+  color: rgb(139, 83, 224);
+  text-decoration: underline;
+}
+.footer a:hover {
+  animation: animateLink 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes animateLink {
+  0% {
+    color: rgb(64, 64, 247);
+  }
+  25% {
+    color: rgb(255, 0, 242);
+  }
+  50% {
+    color: rgb(255, 136, 0);
+  }
+  75% {
+    color: aqua;
+  }
+  100% {
+    color: rgb(238, 255, 0);
+  }
+}
+@media screen and (min-width: 500px) {
+  .section2 button {
+    width: 400px;
+  }
+}

@@ -57,7 +57,6 @@ const NewProfile = ({ data }: any) => {
     return (
       <>
         <div className={styles.loader}></div>
-        <h2>Loading</h2>
       </>
     );
   }
