@@ -138,7 +138,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { params } = context;
   console.log(params);
   const res = await fetch(
-    `http://localhost:3000/api/user/${params?.unique_id}`
+    `https://chofolio.vercel.app//api/user/${params?.unique_id}`
   );
   const data = await res.json();
   return {
