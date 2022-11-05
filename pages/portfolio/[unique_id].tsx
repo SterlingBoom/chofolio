@@ -6,8 +6,11 @@ import { Portfolio, Repo } from "../../types";
 import { RiGitRepositoryLine } from "react-icons/ri";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const NewProfile = ({ data }: any) => {
+  const router = useRouter();
+  const { unique_id } = router.query;
   const [avatar, setavatar] = useState<string>("");
   const [user, setuser] = useState<Portfolio>();
   const [repos, setrepos] = useState<any>();
@@ -44,8 +47,19 @@ const NewProfile = ({ data }: any) => {
     getGithubRepoData();
   }, [data]);
 
+  const copy = (text: string) => navigator.clipboard.writeText(text);
+  const copyLink = () => {
+    copy(`https://chofolio.vercel.app/portfolio/${unique_id}`);
+    alert("Link copied to clipboard");
+  };
+
   if (loading === true) {
-    return <div className={styles.loader}></div>;
+    return (
+      <>
+        <div className={styles.loader}></div>
+        <h2>Loading</h2>
+      </>
+    );
   }
   if (loading === false) {
     return (
@@ -133,8 +147,15 @@ const NewProfile = ({ data }: any) => {
         <div className={styles.footer}>
           Copyright &copy; {new Date().getFullYear()} {user?.name}
         </div>
+        <button className={styles.copyLink} onClick={copyLink}>
+          Copy Portfolio Link
+        </button>
         <div className={styles.cermuel}>
-          <a href="https://cermuel.vercel.app">Built with Cermuel</a>
+          <a href="https://cermuel.vercel.app/" target="blank">
+            <span className={styles.one}>Want</span> a{" "}
+            <span className={styles.two}>Custom</span>{" "}
+            <span className={styles.three}>Template?</span>
+          </a>
         </div>
       </div>
     );
@@ -147,7 +168,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const { params } = context;
   console.log(params);
   const res = await fetch(
-    `https://chofolio.vercel.app//api/user/${params?.unique_id}`
+    `https://chofolio.vercel.app/api/user/${params?.unique_id}`
   );
   const data = await res.json();
   return {

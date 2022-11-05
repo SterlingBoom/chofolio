@@ -176,7 +176,7 @@
   color: rgb(167, 164, 164);
   font-size: 0.9em;
 }
-.cermuel {
+.copyLink {
   position: fixed;
   top: 10;
   right: 10%;
@@ -186,7 +186,7 @@
   padding: 0.5em 1em;
   cursor: pointer;
 }
-.cermuel:hover {
+.copyLink:hover {
   animation: submitAnimate 2s;
   animation-iteration-count: infinite;
 }
@@ -291,4 +291,21 @@
     box-shadow: 30px 0 0 #97bf0d;
     margin-top: 0;
   }
+}
+.cermuel {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(64, 64, 247);
+  margin-top: 1em;
+  font-weight: 700;
+}
+.one {
+  color: aqua;
+}
+.two {
+  color: rgb(139, 83, 224);
+}
+.three {
+  color: #4595d0;
 }
