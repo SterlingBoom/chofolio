@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.text}>
             Portfolio building can be stressful, confusing and time-consuming if
-            you do it all on your own. With our portfolio builder, it's quick,
+            you do it all on your own. With our portfolio builder, it is quick,
             pain-free and effective
           </div>
           <button onClick={portfolio} className={styles.portfolio}>
