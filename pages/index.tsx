@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.right}>
           <Image
-            src="/portfolio.webp"
+            src="/portfolio.png"
             width={500}
             height={400}
             alt="Landing Page"
