@@ -31,7 +31,7 @@ const PROFILE: NextPage = () => {
   const [about, setabout] = useState<string>("");
   const [skills, setskills] = useState<Skills[]>([]);
   const [singleSkill, setsingleSkill] = useState({
-    language: "",
+    language: "Language Name",
     level: Level.intermediate,
   });
   const [language, setlanguage] = useState<string>("");
@@ -39,11 +39,11 @@ const PROFILE: NextPage = () => {
   const [github_username, setgithub_username] = useState<string>("");
   const [workXP, setworkXP] = useState<Work[]>([]);
   const [singleWork, setsingleWork] = useState({
-    title: "",
-    company: "",
-    description: "",
-    start: "",
-    end: "",
+    title: "Title",
+    company: "Company Name",
+    description: "Brief Description",
+    start: "Start Date",
+    end: "End Date",
   });
   const [title, settitle] = useState<string>("");
   const [company, setcompany] = useState<string>("");
