@@ -14,6 +14,7 @@
   font-family: "Righteous", cursive;
   margin: 0 0 2em 0;
   color: rgb(109, 109, 247);
+  text-align: center;
 }
 .container hr {
   width: 100%;
@@ -210,5 +211,10 @@
   100% {
     background-color: rgb(255, 136, 0);
     border-color: rgb(255, 136, 0);
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
   }
 }
