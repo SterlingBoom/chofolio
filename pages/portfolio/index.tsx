@@ -31,7 +31,7 @@ const PROFILE: NextPage = () => {
   const [about, setabout] = useState<string>("");
   const [skills, setskills] = useState<Skills[]>([]);
   const [singleSkill, setsingleSkill] = useState({
-    language: "Language Name",
+    language: "",
     level: Level.intermediate,
   });
   const [language, setlanguage] = useState<string>("");
@@ -101,7 +101,15 @@ const PROFILE: NextPage = () => {
   };
 
   const createPortfolio = async () => {
-    if (username && name && github_username && role) {
+    if (
+      username &&
+      name &&
+      github_username &&
+      role &&
+      skills &&
+      about &&
+      language
+    ) {
       const newPortfolio = {
         username,
         name,
@@ -261,6 +269,7 @@ const PROFILE: NextPage = () => {
           Add a list of skills you are familiar with and state your level of
           familiarity with this skills
         </div>
+        *
         <input
           type="text"
           placeholder="Language, eg: (Javascript)"

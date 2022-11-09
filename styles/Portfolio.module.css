@@ -43,10 +43,12 @@
   font-size: 1.3em;
   margin-top: 2em;
   margin-bottom: 1em;
+  width: 100%;
 }
 .about {
   color: grey;
   font-weight: 600;
+  width: 100%;
 }
 .techStackContainer {
   width: 100%;

@@ -117,30 +117,36 @@ const NewProfile = ({ data }: any) => {
 
             <div className={styles.header}>WORK Experience</div>
 
-            <div className={styles.workContainer}>
-              {user?.workXP?.map((val, key: number) => {
-                return (
-                  <div className={styles.work} key={key}>
-                    <div className={styles.title}>{val.title}</div>
-                    <div className={styles.company}>{val.company}</div>
-                    <div className={styles.date}>
-                      {val.start} - {val.end}
-                    </div>
-                    <button
-                      className={styles.handleDesc}
-                      onClick={() => setshowdescription(!showdescription)}
-                    >
-                      See {showdescription ? "less" : "more"}
-                    </button>
-                    {showdescription ? (
-                      <div className={styles.description}>
-                        {val.description}
+            {user?.workXP?.length == 0 ? (
+              <div className={styles.workContainer}>
+                No work experience available
+              </div>
+            ) : (
+              <div className={styles.workContainer}>
+                {user?.workXP?.map((val, key: number) => {
+                  return (
+                    <div className={styles.work} key={key}>
+                      <div className={styles.title}>{val.title}</div>
+                      <div className={styles.company}>{val.company}</div>
+                      <div className={styles.date}>
+                        {val.start} - {val.end}
                       </div>
-                    ) : null}
-                  </div>
-                );
-              })}
-            </div>
+                      <button
+                        className={styles.handleDesc}
+                        onClick={() => setshowdescription(!showdescription)}
+                      >
+                        See {showdescription ? "less" : "more"}
+                      </button>
+                      {showdescription ? (
+                        <div className={styles.description}>
+                          {val.description}
+                        </div>
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
 
             <div className={styles.repoHeader}>
               <div>Repositories</div>{" "}
